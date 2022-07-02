@@ -9,6 +9,7 @@ var context = canvas.getContext('2d');
 var radius = 10;
 var minRadius = 2;
 var maxRadius = 30;
+save();
 
 function pincelSize(){
   //asignando los tamaños del pincel
@@ -34,7 +35,7 @@ function pincelSize(){
 function start(){
   pincelSize();
   //seteando el tamaño de canvas
-  canvas.width = window.innerWidth;
+  canvas.width = window.innerWidth - 15; /*para quitar la barra y tener completo el canvas*/
   canvas.height = window.innerHeight;
   //eventos
   $('#canvas').mousedown(press); //click izquierdo
@@ -72,4 +73,12 @@ function start(){
     //deja de pintar
     draw = false
   }
+}
+
+function save(){
+  $('#save').click(function(){
+    // taDaURL -> representación de la imagen en el formato especificado
+    var image = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
+    window.location.href = image;
+  });
 }
