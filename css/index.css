@@ -1,0 +1,19 @@
+/* Estilo a los botones de colores */
+
+.set_color{
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.bar{/*para que se pongan a lado de otro*/
+  background-color: #eee;
+  width: 100%;
+  position: fixed;
+}
+.colors{/*para que los colores se pongan abajo de otro*/
+  margin-top: 30px;
+  background-color: #eee;
+  width: 45px;
+  height: 100%;
+  position: fixed;
+}

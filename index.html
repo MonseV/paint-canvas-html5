@@ -3,27 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/index.css">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Taller Canvas</title>
 </head>
 <body>
-  <div class="container">
+  <div class="container bar">
     <div class="row">
       <div class="col-ms-12">
-        <div class="radius">
+        <div class="radius" style="display:inline">
           Pincel <label id="pincelval">10</label>
           <button class="btn btn-primary" id="decrease">-</button>
           <button class="btn btn-primary" id="increase">+</button>
         </div>
-        <button class="btn btn-sucess" id="save">Save</button>
+        <button class="btn btn-success" id="save">Save</button>
       </div>
     </div>
   </div>
-  <div id="changeColor"></div>
+  <div class="colors" id="changeColor"></div>
   <canvas id="canvas"></canvas>
   <script src="./js/jquery.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
   <script src="./js/index.js"></script>
+  <script src="./js/set_colors.js"></script>
 </body>
 </html>
